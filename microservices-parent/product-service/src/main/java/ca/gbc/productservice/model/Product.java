@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @Document(value = "product")
 public class Product {
 
-    @Id
+    @Id //makes Id a primary key
     private String Id;
     private String Name;
     private String Description;
