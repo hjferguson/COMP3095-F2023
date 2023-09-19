@@ -13,13 +13,13 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(value = "product")
+@Document(value = "product") //mongo tables are called documents
 public class Product {
 
     @Id //makes Id a primary key
     private String Id;
-    private String Name;
-    private String Description;
+    private String name;
+    private String description;
     private BigDecimal price;
 
 }
