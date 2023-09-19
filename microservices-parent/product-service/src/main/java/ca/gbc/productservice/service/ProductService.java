@@ -9,7 +9,7 @@ public interface ProductService {
 
     void createProduct(ProductRequest productRequest);
 
-    void updateProduct(String productId, ProductRequest productRequest);
+    String updateProduct(String productId, ProductRequest productRequest);
 
     void deleteProduct(String productId);
 

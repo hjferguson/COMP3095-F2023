@@ -6,6 +6,13 @@ import ca.gbc.productservice.model.Product;
 import ca.gbc.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.mongodb.core.ExecutableFindOperation;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+//import org.springframework.data.mongodb.core.MongoTemplate; //this was the most similar in name
+
+
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,7 +28,7 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public void createProduct(ProductRequest productRequest) {
 
-        log.debug("Creating a new product {}", productRequest.getName());
+        log.info("Creating a new product {}", productRequest.getName());
 
         Product product = Product.builder()
                 .name(productRequest.getName())
@@ -29,20 +36,65 @@ public class ProductServiceImpl implements ProductService{
                 .price(productRequest.getPrice())
                 .build();
 
+        //make the object but then we need to persist (store) it somewhere
+
+        productRepository.save(product);
+
+        log.info("Product {} is saved", product.getId());
+
     }
 
     @Override
-    public void updateProduct(String productId, ProductRequest productRequest) {
+    public String updateProduct(String productId, ProductRequest productRequest) {
+
+        log.info("Updating a product with id {}", productId); //good practice to log to logfile. se what methods got invoked
+
+        Query query = new Query(); //mongo.core
+        query.addCriteria(Criteria.where("Id").is(productId)); //Sergio has "id" instead of "Id"
+        Product product = mongoTemplate.findOne(query, Product.class); //ask Sergio about this
+
+        if(product != null){
+            product.setName(productRequest.getName());
+            product.setDescription(productRequest.getDescription());
+            product.setPrice(productRequest.getPrice());
+
+
+            log.info("Product {} is updated", product.getId());
+            return productRepository.save(product).getId();
+        }
+
+
+        return productId;
+
 
     }
 
     @Override
     public void deleteProduct(String productId) {
 
+        log.info("Product {} is deleted", productId);
+        productRepository.deleteById(productId);
     }
 
     @Override
     public List<ProductResponse> getAllProducts() {
-        return null;
+
+        log.info("Returning a list of products:");
+
+        List<Product> products = productRepository.findAll();
+        return products.stream().map(this::mapToProductResponse).toList();
     }
+
+    private ProductResponse mapToProductResponse(Product product) {
+
+        return ProductResponse.builder()
+                .Id(product.getId())
+                .name(product.getName())
+                .description(product.getDescription())
+                .price(product.getPrice())
+                .build();
+    }
+
+
+
 }
