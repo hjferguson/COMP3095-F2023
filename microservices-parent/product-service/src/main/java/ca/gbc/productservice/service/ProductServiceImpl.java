@@ -7,6 +7,7 @@ import ca.gbc.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.ExecutableFindOperation;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 //import org.springframework.data.mongodb.core.MongoTemplate; //this was the most similar in name
@@ -24,6 +25,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
+    private final MongoTemplate mongoTemplate;
 
     @Override
     public void createProduct(ProductRequest productRequest) {
