@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     //UPDATE / PUT
-    @PutMapping({"/productId"})
+    @PutMapping({"/{productId}"})
     public ResponseEntity<?> updateProduct(@PathVariable("productId") String productId,
                                            @RequestBody ProductRequest productRequest) {
         String updatedProductId = productService.updateProduct(productId, productRequest);
@@ -44,7 +44,7 @@ public class ProductController {
         return new ResponseEntity<>(headers, HttpStatus.NO_CONTENT); //no content because we are just updating
     }
 
-    @DeleteMapping({"/productId"})
+    @DeleteMapping({"/{productId}"})
     public ResponseEntity<?> deleteProduct(@PathVariable("productId") String productId){
         productService.deleteProduct(productId);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
