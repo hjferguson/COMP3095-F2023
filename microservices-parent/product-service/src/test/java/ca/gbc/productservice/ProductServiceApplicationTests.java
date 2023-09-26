@@ -4,15 +4,20 @@ import ca.gbc.productservice.dto.ProductRequest;
 import ca.gbc.productservice.dto.ProductResponse;
 import ca.gbc.productservice.model.Product;
 import ca.gbc.productservice.repository.ProductRepository;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mongodb.assertions.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.test.web.servlet.MockMvc;
-import org.testcontainers.shaded.com.fasterxml.jackson.core.JsonProcessingException;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -21,10 +26,13 @@ import java.util.UUID;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class ProductServiceApplicationTests {
+class ProductServiceApplicationTests extends AbstractContainerBase {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;
 
     @Autowired
     private ProductRepository productRepository;
@@ -32,62 +40,76 @@ class ProductServiceApplicationTests {
     @Autowired
     MongoTemplate mongoTemplate;
 
-    private ProductRequest getProductRequest(){ //helper functions should be private
 
+    private ProductRequest getProductRequest(){
         return ProductRequest.builder()
-                .name("Apple iPad 2023")
-                .description("Apple iPad version 2023")
-                .price(BigDecimal.valueOf(1200))
+                .name("Shiny Hat Rack")
+                .description("A hat rack with a disconcerting sheen.")
+                .price(BigDecimal.valueOf(34.99))
                 .build();
     }
 
-    private List<Product> getProductList() {
-        List<Product> productList = new ArrayList<>();
-        UUID uuid = UUID.randomUUID();
+    private List<Product> getProductList(){
+        List <Product> productList = new ArrayList<>();
+        UUID uuid= UUID.randomUUID();
 
         Product product = Product.builder()
                 .id(uuid.toString())
-                .name("Apple iPad 2023")
-                .description("apple ipad version 2023")
-                .price(BigDecimal.valueOf(1200))
+                .name("Shiny Hat Rack")
+                .description("A hat rack with a disconcerting sheen.")
+                .price(BigDecimal.valueOf(34.99))
                 .build();
 
         productList.add(product);
         return productList;
     }
 
-    private String convertObjectToJson(List<ProductResponse> productList)
-            throws JsonProcessingException, com.fasterxml.jackson.core.JsonProcessingException {
+
+    private String convertObjectToJsonString(List <ProductResponse> productList) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(productList);
+    }
+
+    private List<ProductResponse> convertJSONStringToObject(String json) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.writeValueAsString(productList); //might have imported wrong object mapper
-    }
-
-    private List<ProductResponse> convertJsonStringToObject(String json)
-            throws JsonProcessingException, com.fasterxml.jackson.core.JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(json, new TypeReference<List<ProductResponse>>() {
-        });
+        return mapper.readValue(json, new TypeReference<List<ProductResponse>>(){});
     }
 
     @Test
-    void createProduct(){
+    void createProduct()   throws Exception{
+        ProductRequest productRequest = getProductRequest();
+        String productRequestJson = objectMapper.writeValueAsString(productRequest);
 
-    }
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/product")
+                        .contentType("application/json")
+                        .content(productRequestJson))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
 
-    @Test
-    void getAllProducts(){
+        Assertions.assertTrue(productRepository.findAll().size() == 1);
 
-    }
-
-    @Test
-    void updateProducts(){
+        Query query = new Query();
+        query.addCriteria(Criteria.where("name").is("Shiny Hat Rack"));
+        List<Product> products = mongoTemplate.find(query, Product.class);
+        Assertions.assertTrue(products.size() == 1);
 
     }
 
     @Test
-    void deleteProduct(){
+    void getAllProducts() {
+
 
     }
+
+    @Test
+    void updateProduct() {
+
+    }
+
+    @Test
+    void deleteProduct() {
+
+    }
+
 
 
 }
