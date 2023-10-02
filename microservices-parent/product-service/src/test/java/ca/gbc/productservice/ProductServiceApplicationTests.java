@@ -31,6 +31,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 @AutoConfigureMockMvc
 class ProductServiceApplicationTests extends AbstractContainerBase {
@@ -118,7 +120,7 @@ class ProductServiceApplicationTests extends AbstractContainerBase {
                 .accept(MediaType.APPLICATION_JSON));
 
         //then
-        response.andExpect(MockMvcResultMatchers.status().isOk());
+        response.andExpect(MockMvcResultMatchers.status().isNoContent());
         response.andDo(MockMvcResultHandlers.print()); //you wouldnt use this for testing production
 
         MvcResult result = response.andReturn(); //should be JSON response
@@ -159,12 +161,45 @@ class ProductServiceApplicationTests extends AbstractContainerBase {
                 .content(productRequestString));
 
         //then
+        response.andExpect(MockMvcResultMatchers.status().isNoContent());
+        response.andDo(MockMvcResultHandlers.print());
+
+        Query query = new Query();
+        query.addCriteria(Criteria.where("id").is(savedProduct.getId()));
+        Product storedProduct = mongoTemplate.findOne(query, Product.class);
+
+        assertEquals(savedProduct.getPrice(),storedProduct.getPrice()); //take our saved product and validates against the DB
 
 
     }
 
     @Test
-    void deleteProduct() {
+    void deleteProduct() throws Exception {
+
+        //given
+        Product savedProduct = Product.builder()
+                .id(UUID.randomUUID().toString())
+                .name("Java Microservices Programming")
+                .description(("Course Textbook"))
+                .price(BigDecimal.valueOf(200))
+                .build();
+
+        productRepository.save(savedProduct);
+        //when
+        ResultActions response = mockMvc.perform(MockMvcRequestBuilders
+                        .delete("/api/product" + savedProduct.getId().toString())
+                        .contentType(MediaType.APPLICATION_JSON));
+
+
+        //then
+        response.andExpect(MockMvcResultMatchers.status().isNoContent());
+        response.andDo(MockMvcResultHandlers.print());
+
+        Query query = new Query();
+        query.addCriteria(Criteria.where("id").is(savedProduct.getId()));
+        Long productCount = mongoTemplate.count(query, Product.class);
+
+        assertEquals(0, productCount);
 
     }
 
