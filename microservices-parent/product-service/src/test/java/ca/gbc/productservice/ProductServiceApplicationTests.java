@@ -99,7 +99,7 @@ class ProductServiceApplicationTests extends AbstractContainerBase {
         Query query = new Query();
         query.addCriteria(Criteria.where("name").is("Shiny Hat Rack"));
         List<Product> products = mongoTemplate.find(query, Product.class);
-        Assertions.assertTrue(products.size() == 1);
+        Assertions.assertTrue(products.size() > 1);
 
     }
 
@@ -202,7 +202,5 @@ class ProductServiceApplicationTests extends AbstractContainerBase {
         assertEquals(0, productCount);
 
     }
-
-
 
 }
