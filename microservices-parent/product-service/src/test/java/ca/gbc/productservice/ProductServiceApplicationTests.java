@@ -6,18 +6,25 @@ import ca.gbc.productservice.model.Product;
 import ca.gbc.productservice.repository.ProductRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mongodb.assertions.Assertions;
+//import com.mongodb.assertions.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.testcontainers.shaded.com.fasterxml.jackson.databind.Module;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -94,14 +101,65 @@ class ProductServiceApplicationTests extends AbstractContainerBase {
 
     }
 
+//    BDD - Behaviour Driven Development
+//    Given - Setup
+//    when - action
+//    then - verify
+
+
     @Test
-    void getAllProducts() {
+    void getAllProducts() throws Exception {
+        //given
+        productRepository.saveAll(getProductList()); //repository is a proxy to your db. saveall uses lists
+
+        //when
+        ResultActions response = mockMvc.perform(MockMvcRequestBuilders
+                .get("/api/product")
+                .accept(MediaType.APPLICATION_JSON));
+
+        //then
+        response.andExpect(MockMvcResultMatchers.status().isOk());
+        response.andDo(MockMvcResultHandlers.print()); //you wouldnt use this for testing production
+
+        MvcResult result = response.andReturn(); //should be JSON response
+        String jsonResponse = result.getResponse().getContentAsString();
+        JsonNode jsonNodes = new ObjectMapper().readTree(jsonResponse);
+
+        int actualSize = jsonNodes.size();
+        int expectedSize = getProductList().size();
+
+        Assertions.assertEquals(expectedSize, actualSize);
+
 
 
     }
 
     @Test
-    void updateProduct() {
+    void updateProduct() throws Exception {
+
+        //given
+        Product savedProduct = Product.builder()
+                .id(UUID.randomUUID().toString())
+                .name("Widget")
+                .description(("Widget Original Price"))
+                .price(BigDecimal.valueOf(100))
+                .build();
+
+        //saved product with original price
+        productRepository.save(savedProduct);
+
+        //prepare updated product
+        savedProduct.setPrice(BigDecimal.valueOf(200)); //saves in memeory
+        String productRequestString = objectMapper.writeValueAsString(savedProduct);
+
+        //when
+        ResultActions response = mockMvc.perform(MockMvcRequestBuilders
+                .put("/api/product" + savedProduct.getId().toString())
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(productRequestString));
+
+        //then
+
 
     }
 
