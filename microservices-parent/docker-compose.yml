@@ -11,3 +11,22 @@ services:
     container_name: product-service-gbc
     environment:
       SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - mongodb
+    networks:
+      - spring
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=rootadmin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - ./data/mongo/products:/data/db
+      - ./init/mongo/docker-entrypoint-initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - spring
+
