@@ -14,3 +14,17 @@ WORKDIR /home/gradle/src
 
 #run the gradle build from within container
 RUN gradle build -x test
+
+#BASE IMAGE
+FROM openjdk:17-alpine
+
+RUN mkdir /app
+
+COPY --from=builder /home/gradle/src/build/libs/*.jar /app/product-service.jar
+
+ENV MONGO_DB_USERNAME=rootadmin \
+    MONGO_DB_PASSWORD=password
+
+EXPOSE 8084
+
+ENTRYPOINT ("java","-jar","/app/product-service.jar")
