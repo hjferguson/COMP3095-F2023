@@ -48,9 +48,9 @@ public class ProductServiceApplicationTests extends AbstractContainerBase {
 
     ProductRequest getProductRequest() {
         return ProductRequest.builder()
-                .name("Zojirushi Coffee Mug Black")
-                .description("Keeps coffee hot and lemonade cold")
-                .price(BigDecimal.valueOf(45))
+                .name("Zojirushi Rice Cooker")
+                .description("Never make shit rice again!")
+                .price(BigDecimal.valueOf(220))
                 .build();
     }
 
@@ -94,7 +94,7 @@ public class ProductServiceApplicationTests extends AbstractContainerBase {
         Assertions.assertTrue(productRepository.findAll().size() > 0);
 
         Query query = new Query();
-        query.addCriteria(Criteria.where("name").is("BMW M3"));
+        query.addCriteria(Criteria.where("name").is("Zojirushi Rice Cooker"));
 
         List<Product> products = mongoTemplate.find(query, Product.class);
         Assertions.assertTrue(products.size() > 0);
