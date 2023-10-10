@@ -39,7 +39,7 @@ public class ProductController {
         String updatedProductId = productService.updateProduct(productId, productRequest);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Location", "/api/product/" + updatedProductId);
+        headers.add("Location", "/api/products/" + updatedProductId);
 
         return new ResponseEntity<>(headers, HttpStatus.NO_CONTENT); //no content because we are just updating
     }
