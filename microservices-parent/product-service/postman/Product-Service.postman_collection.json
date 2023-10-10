@@ -12,15 +12,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/product",
+					"raw": "http://localhost:8084/api/products",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8084",
 					"path": [
 						"api",
-						"product"
+						"products"
 					]
 				}
 			},
@@ -41,15 +41,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/product",
+					"raw": "http://localhost:8084/api/products",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8084",
 					"path": [
 						"api",
-						"product"
+						"products"
 					]
 				}
 			},
@@ -62,7 +62,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Apple ipad 2023\",\r\n    \"description\": \"New apple ipad\",\r\n    \"price\" : \"1999.99\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Apple ipad 2024\",\r\n    \"description\": \"New apple ipad\",\r\n    \"price\" : \"1999.99\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -70,16 +70,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/product/65099b9a35ec6626e6359230",
+					"raw": "http://localhost:8084/api/products/652575b67459d62aa01836fe",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8084",
 					"path": [
 						"api",
-						"product",
-						"65099b9a35ec6626e6359230"
+						"products",
+						"652575b67459d62aa01836fe"
 					]
 				}
 			},
@@ -91,16 +91,16 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/product/65099b9a35ec6626e6359230",
+					"raw": "http://localhost:8084/api/products/652575b67459d62aa01836fe",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8084",
 					"path": [
 						"api",
-						"product",
-						"65099b9a35ec6626e6359230"
+						"products",
+						"652575b67459d62aa01836fe"
 					]
 				}
 			},
