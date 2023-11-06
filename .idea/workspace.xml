@@ -5,9 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.lock" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/65254c893bb5a700b18a7934_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/65254c8c5dc1f565ca1311f2_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/65254c90f9586c5074435163_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/am-65254c893bb5a700b18a7933.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/mongosh_repl_history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/snippets/index.bson.br" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/snippets/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTigerHS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-0--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-0-7822806399082666531.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-10--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-2--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-4--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-7--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T13-07-19Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T13-07-52Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T13-13-40Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-08-20Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-33-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-34-22Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-35-10Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-35-47Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-36-27Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-36-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-37-15Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-37-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-38-03Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-38-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-39-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-39-44Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-40-09Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-40-32Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-40-58Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-41-35Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-58-33Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T14-59-03Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T15-03-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T15-25-05Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T15-54-00Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T16-01-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T16-28-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T16-33-56Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-10-10T16-35-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-1--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-1-7822806399082666531.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-11--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-3--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-5--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-6--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-8--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-9--6863379939504088856.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerLog.0000000029" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerTmplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/storage.bson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +106,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,6 +115,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -73,15 +142,16 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-19",
     "last_opened_file_path": "C:/Users/harla/Desktop/T177/sem5/java_springboot/COMP3095-F2023/microservices-parent/order-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   }
@@ -91,7 +161,20 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023\microservices-parent\order-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.gbc.inventoryservice.Main" />
+      <module name="microservices-parent.inventory-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.gbc.inventoryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="order-service.main" />
@@ -108,6 +191,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,6 +209,8 @@
       <workItem from="1698669993023" duration="2139000" />
       <workItem from="1698765233354" duration="683000" />
       <workItem from="1699194901148" duration="9976000" />
+      <workItem from="1699275717708" duration="2916000" />
+      <workItem from="1699305497222" duration="1509000" />
     </task>
     <servers />
   </component>

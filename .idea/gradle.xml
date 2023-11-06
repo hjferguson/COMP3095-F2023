@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/microservices-parent" />
+            <option value="$PROJECT_DIR$/microservices-parent/inventory-service" />
           </set>
         </option>
       </GradleProjectSettings>

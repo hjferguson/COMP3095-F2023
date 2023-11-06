@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/COMP3095-F2023.iml" filepath="$PROJECT_DIR$/.idea/COMP3095-F2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices-parent/inventory-service/inventory-service.iml" filepath="$PROJECT_DIR$/microservices-parent/inventory-service/inventory-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/product-service.main.iml" />
     </modules>
   </component>
 </project>
