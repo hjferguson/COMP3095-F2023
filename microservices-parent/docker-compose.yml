@@ -16,6 +16,37 @@ services:
     networks:
       - spring
 
+  order-service:
+    image: order-service
+    ports:
+      - "8082:8082"
+    build:
+      context: ./order-service
+      dockerfile: ./Dockerfile
+    container_name: order-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - postgres-order
+    networks:
+      - spring
+
+  postgres-order:
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=order-service
+    volumes:
+      - ./data/postgres/order-service:/data/postgres
+      - ./init/postgres/order-service/init.sql:/docker-entrypoint-initdb.d/init.sql
+    container_name: postgres-order-gbc
+    restart: unless-stopped
+    networks:
+      - spring
+
   mongodb:
     image: mongo:latest
     ports:
@@ -29,6 +60,18 @@ services:
       - ./init/mongo/docker-entrypoint-initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     restart: unless-stopped
     command: mongod --auth
+    networks:
+      - spring
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8888:88"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.ca
+      - PGADMIN_DEFAULT_PASSWORD=password
+    container_name: pgadmin-order-gbc
+    restart: unless-stopped
     networks:
       - spring
 
