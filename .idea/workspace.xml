@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/order-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/product-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-2--179883316774587316.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-2--179883316774587316.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-4--179883316774587316.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-4--179883316774587316.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-3--179883316774587316.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-3--179883316774587316.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-5--179883316774587316.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-5--179883316774587316.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-6--179883316774587316.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-6--179883316774587316.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerLog.0000000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/product-service/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-07T00-03-52Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-07T00-03-52Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerLog.0000000007" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerLog.0000000007" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/repository/InventoryRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +179,7 @@
       <workItem from="1699318258987" duration="132000" />
       <workItem from="1699318399200" duration="44000" />
       <workItem from="1699318450840" duration="115000" />
-      <workItem from="1699318572498" duration="941000" />
+      <workItem from="1699318572498" duration="2172000" />
     </task>
     <servers />
   </component>
