@@ -8,9 +8,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/microservices-parent" />
+            <option value="$PROJECT_DIR$/microservices-parent/discovery-service" />
             <option value="$PROJECT_DIR$/microservices-parent/inventory-service" />
             <option value="$PROJECT_DIR$/microservices-parent/order-service" />
             <option value="$PROJECT_DIR$/microservices-parent/product-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent/discovery-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/microservices-parent/discovery-service" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -19,6 +28,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/microservices-parent" />
+            <option value="$PROJECT_DIR$/microservices-parent/discovery-service" />
             <option value="$PROJECT_DIR$/microservices-parent/inventory-service" />
             <option value="$PROJECT_DIR$/microservices-parent/order-service" />
             <option value="$PROJECT_DIR$/microservices-parent/product-service" />
@@ -30,6 +40,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/microservices-parent" />
+            <option value="$PROJECT_DIR$/microservices-parent/discovery-service" />
             <option value="$PROJECT_DIR$/microservices-parent/inventory-service" />
             <option value="$PROJECT_DIR$/microservices-parent/order-service" />
             <option value="$PROJECT_DIR$/microservices-parent/product-service" />

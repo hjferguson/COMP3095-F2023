@@ -34,6 +34,7 @@ dependencies {
 	testImplementation("org.testcontainers:mongodb:1.18.1")
 	// https://mvnrepository.com/artifact/org.testcontainers/testcontainers-bom
 	implementation("org.testcontainers:testcontainers-bom:1.18.1")
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
 
 }
 

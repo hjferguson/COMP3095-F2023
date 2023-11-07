@@ -34,3 +34,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+#added the db local storage
+microservices-parent/data/
