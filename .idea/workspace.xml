@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +175,8 @@
       <workItem from="1699318258987" duration="132000" />
       <workItem from="1699318399200" duration="44000" />
       <workItem from="1699318450840" duration="115000" />
-      <workItem from="1699318572498" duration="7652000" />
+      <workItem from="1699318572498" duration="7951000" />
+      <workItem from="1699362169959" duration="1638000" />
     </task>
     <servers />
   </component>
