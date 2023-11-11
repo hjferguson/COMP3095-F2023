@@ -31,6 +31,9 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
+    implementation("org.springframework.boot:spring-boot-starter-webflux:3.1.5")
+    implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
+
 
 }
 
