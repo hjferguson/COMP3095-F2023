@@ -5,16 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/6548ed05f22255378e9792c8_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/6548ed0658805f85c5a4ff00_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/6548ed073d30106fcdb63ade_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/am-6548ed05f22255378e9792c7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/mongosh_repl_history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/snippets/index.bson.br" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/.mongodb/mongosh/snippets/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.turtle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTiger.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/WiredTigerHS.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/_mdb_catalog.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-0--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-10--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-2--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-4--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/collection-7--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T13-41-25Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T13-41-42Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T13-46-24Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T23-27-15Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T23-42-51Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-06T23-49-03Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-07T00-03-52Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/diagnostic.data/metrics.2023-11-07T14-27-24Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-1--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-11--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-3--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-5--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-6--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-8--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/index-9--179883316774587316.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerLog.0000000008" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerPreplog.0000000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/journal/WiredTigerPreplog.0000000002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/mongod.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/sizeStorer.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/data/mongo/products/storage.bson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices-parent/discovery-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/java/ca/gbc/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/product-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/main/resources/application-docker.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +87,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dockerfile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -111,7 +145,7 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023\microservices-parent\order-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.gbc.inventoryservice.Main" />
       <module name="microservices-parent.inventory-service.main" />
@@ -201,7 +235,7 @@
       <workItem from="1699318399200" duration="44000" />
       <workItem from="1699318450840" duration="115000" />
       <workItem from="1699318572498" duration="7951000" />
-      <workItem from="1699362169959" duration="4021000" />
+      <workItem from="1699362169959" duration="6553000" />
     </task>
     <servers />
   </component>

@@ -36,4 +36,4 @@ out/
 .vscode/
 
 #added the db local storage
-microservices-parent/data/
+/microservices-parent/data/

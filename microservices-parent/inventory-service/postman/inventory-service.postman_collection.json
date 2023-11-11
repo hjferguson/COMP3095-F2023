@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "b6554631-ac29-4f72-b279-0ca9009c949b",
+		"name": "inventory-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29779587"
+	},
+	"item": [
+		{
+			"name": "item_exists?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8083/api/inventory/sku_55555"
+			},
+			"response": []
+		}
+	]
+}
