@@ -8,7 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       </method>
     </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="api-gateway.main" />
+      <module name="microservices-parent.api-gateway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ca.gbc.apigateway.ApiGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,7 +215,7 @@
       <workItem from="1699714410713" duration="4912000" />
       <workItem from="1699796022300" duration="5385000" />
       <workItem from="1699803120751" duration="28000" />
-      <workItem from="1699883586108" duration="1954000" />
+      <workItem from="1699883586108" duration="2882000" />
     </task>
     <servers />
   </component>
