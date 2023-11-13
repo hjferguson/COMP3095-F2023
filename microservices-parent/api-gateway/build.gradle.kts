@@ -18,7 +18,8 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-
+    implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.0.8")
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
 
 }
 
