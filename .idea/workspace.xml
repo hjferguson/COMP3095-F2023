@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/microservices-parent">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/microservices-parent/api-gateway">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/microservices-parent/discovery-service">
@@ -122,6 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ca.gbc.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="microservices-parent.discovery-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ca.gbc.discoveryservice.DiscoveryServiceApplication" />
@@ -200,7 +212,9 @@
       <workItem from="1699318572498" duration="7951000" />
       <workItem from="1699362169959" duration="6553000" />
       <workItem from="1699714410713" duration="4912000" />
-      <workItem from="1699796022300" duration="3594000" />
+      <workItem from="1699796022300" duration="5385000" />
+      <workItem from="1699803120751" duration="28000" />
+      <workItem from="1699883586108" duration="1954000" />
     </task>
     <servers />
   </component>

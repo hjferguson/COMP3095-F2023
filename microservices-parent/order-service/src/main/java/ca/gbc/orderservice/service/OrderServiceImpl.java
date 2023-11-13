@@ -75,9 +75,6 @@ public class OrderServiceImpl implements OrderService {
 
     }
 
-
-
-
     private OrderLineItem mapToModel(OrderLineItemDto orderLineItemDto){
         OrderLineItem orderLineItem = new OrderLineItem();
         orderLineItem.setPrice(orderLineItemDto.getPrice());

@@ -16,6 +16,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent/api-gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/microservices-parent/api-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent/discovery-service" />
         <option name="modules">
           <set>
