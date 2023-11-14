@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/ApiGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +111,7 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.gbc.inventoryservice.Main" />
       <module name="microservices-parent.inventory-service.main" />
@@ -215,7 +212,8 @@
       <workItem from="1699714410713" duration="4912000" />
       <workItem from="1699796022300" duration="5385000" />
       <workItem from="1699803120751" duration="28000" />
-      <workItem from="1699883586108" duration="2882000" />
+      <workItem from="1699883586108" duration="3385000" />
+      <workItem from="1699967520094" duration="4617000" />
     </task>
     <servers />
   </component>
@@ -226,6 +224,16 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.kts" />
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
