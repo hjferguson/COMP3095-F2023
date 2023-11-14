@@ -48,6 +48,37 @@ services:
     networks:
       - spring
 
+  discovery-service:
+    image: discovery-service
+    ports:
+      - "8761:8761"
+    build:
+      context: ./discovery-service
+      dockerfile: ./Dockerfile
+    container_name: discovery-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - order-service
+      - product-service
+      - inventory-service
+    networks:
+      - spring
+
+  api-gateway:
+    image: api-gateway
+    ports:
+      - "8181:8181"
+    build:
+      context: ./api-gateway
+      dockerfile: ./Dockerfile
+    container_name: api-gateway
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - discovery-service
+    networks:
+      - spring
 
 
   postgres-inventory:
@@ -106,7 +137,7 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=user@domain.ca
       - PGADMIN_DEFAULT_PASSWORD=password
-    container_name: pgadmin-order-gbc
+    container_name: pgadmin
     restart: unless-stopped
     networks:
       - spring

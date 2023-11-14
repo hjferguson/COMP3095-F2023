@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/discovery-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/discovery-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/init/postgres/inventory-service/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/init/postgres/inventory-service/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/init/postgres/order-service/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/init/postgres/order-service/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +53,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Dockerfile" />
         <option value="Class" />
+        <option value="package.json" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -213,7 +218,7 @@
       <workItem from="1699796022300" duration="5385000" />
       <workItem from="1699803120751" duration="28000" />
       <workItem from="1699883586108" duration="3385000" />
-      <workItem from="1699967520094" duration="4617000" />
+      <workItem from="1699967520094" duration="8471000" />
     </task>
     <servers />
   </component>

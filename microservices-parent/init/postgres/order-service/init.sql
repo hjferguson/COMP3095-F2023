@@ -1,3 +1,2 @@
-CREATE DATABASE "order-service"
-
-GRANT ALL PRIVILEGES ON DATABASE "order-service" TO "admin"
+CREATE DATABASE order_service;
+GRANT ALL PRIVILEGES ON DATABASE order_service TO admin;
