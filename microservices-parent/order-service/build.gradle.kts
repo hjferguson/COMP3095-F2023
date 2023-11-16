@@ -33,8 +33,8 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
     implementation("org.springframework.boot:spring-boot-starter-webflux:3.1.5")
     implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
-    testImplementation 'org.testcontainers:junit-jupiter:1.15.3'
-    testImplementation 'org.testcontainers:postgresql:1.15.3'
+    testImplementation("org.testcontainers:junit-jupiter:1.15.3")
+    testImplementation("org.testcontainers:postgresql:1.15.3")
 
 
 
