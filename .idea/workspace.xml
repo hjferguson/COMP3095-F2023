@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +239,7 @@
       <workItem from="1699967520094" duration="9188000" />
       <workItem from="1700062135470" duration="65000" />
       <workItem from="1700095316250" duration="423000" />
-      <workItem from="1700104622180" duration="979000" />
+      <workItem from="1700104622180" duration="1367000" />
     </task>
     <servers />
   </component>

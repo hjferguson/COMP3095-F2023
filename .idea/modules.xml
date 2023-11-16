@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/COMP3095-F2023.iml" filepath="$PROJECT_DIR$/.idea/COMP3095-F2023.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventory-service/microservices-parent.inventory-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/inventory-service/microservices-parent.inventory-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/microservices-parent.order-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/microservices-parent.order-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/microservices-parent.order-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/microservices-parent.order-service.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservices-parent.product-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservices-parent.product-service.main.iml" />
     </modules>
   </component>
