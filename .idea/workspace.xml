@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/discovery-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/discovery-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/init/postgres/inventory-service/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/init/postgres/inventory-service/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/init/postgres/order-service/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/init/postgres/order-service/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/java/ca/gbc/orderservice/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +112,7 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
+  <component name="RunManager" selected="Gradle.OrderServiceApplicationTests.contextLoads">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.gbc.inventoryservice.Main" />
       <module name="microservices-parent.inventory-service.main" />
@@ -129,6 +125,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="OrderServiceApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent/order-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":order-service:test" />
+            <option value="--tests" />
+            <option value="&quot;ca.gbc.orderservice.OrderServiceApplicationTests.contextLoads&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="microservices-parent.api-gateway.main" />
@@ -185,6 +205,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderServiceApplicationTests.contextLoads" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -218,7 +239,10 @@
       <workItem from="1699796022300" duration="5385000" />
       <workItem from="1699803120751" duration="28000" />
       <workItem from="1699883586108" duration="3385000" />
-      <workItem from="1699967520094" duration="8471000" />
+      <workItem from="1699967520094" duration="9188000" />
+      <workItem from="1700062135470" duration="65000" />
+      <workItem from="1700095316250" duration="423000" />
+      <workItem from="1700104622180" duration="481000" />
     </task>
     <servers />
   </component>
