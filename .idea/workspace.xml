@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="" />
+    <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,9 +50,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="package.json" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +113,7 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.OrderServiceApplicationTests.contextLoads">
+  <component name="RunManager" selected="Gradle.OrderControllerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.gbc.inventoryservice.Main" />
       <module name="microservices-parent.inventory-service.main" />
@@ -122,6 +126,54 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="OrderControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":order-service:test" />
+            <option value="--tests" />
+            <option value="&quot;ca.gbc.orderservice.OrderControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":order-service:test" />
+            <option value="--tests" />
+            <option value="&quot;ca.gbc.orderservice.OrderServiceApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="OrderServiceApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -202,6 +254,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderControllerTest" />
+        <item itemvalue="Gradle.OrderServiceApplicationTests" />
         <item itemvalue="Gradle.OrderServiceApplicationTests.contextLoads" />
         <item itemvalue="Application.Main" />
       </list>
@@ -239,7 +293,7 @@
       <workItem from="1699967520094" duration="9188000" />
       <workItem from="1700062135470" duration="65000" />
       <workItem from="1700095316250" duration="423000" />
-      <workItem from="1700104622180" duration="1367000" />
+      <workItem from="1700104622180" duration="4494000" />
     </task>
     <servers />
   </component>
@@ -258,6 +312,11 @@
           <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
