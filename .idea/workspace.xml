@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/test/java/ca/gbc/orderservice/OrderControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +150,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="OrderControllerTest.testPlaceOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":order-service:test" />
+            <option value="--tests" />
+            <option value="&quot;ca.gbc.orderservice.OrderControllerTest.testPlaceOrder&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="OrderServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -255,6 +278,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.OrderControllerTest" />
+        <item itemvalue="Gradle.OrderControllerTest.testPlaceOrder" />
         <item itemvalue="Gradle.OrderServiceApplicationTests" />
         <item itemvalue="Gradle.OrderServiceApplicationTests.contextLoads" />
         <item itemvalue="Application.Main" />
@@ -293,7 +317,8 @@
       <workItem from="1699967520094" duration="9188000" />
       <workItem from="1700062135470" duration="65000" />
       <workItem from="1700095316250" duration="423000" />
-      <workItem from="1700104622180" duration="4494000" />
+      <workItem from="1700104622180" duration="4731000" />
+      <workItem from="1700184695105" duration="4333000" />
     </task>
     <servers />
   </component>
@@ -304,6 +329,17 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.kts" />
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
