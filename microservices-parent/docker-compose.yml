@@ -133,7 +133,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     ports:
-      - "8888:88"
+      - "8888:80"
     environment:
       - PGADMIN_DEFAULT_EMAIL=user@domain.ca
       - PGADMIN_DEFAULT_PASSWORD=password

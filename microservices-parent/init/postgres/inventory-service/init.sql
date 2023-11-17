@@ -1,2 +1,1 @@
-CREATE DATABASE inventory_service;
-GRANT ALL PRIVILEGES ON DATABASE inventory_service TO admin;
+GRANT ALL PRIVILEGES ON DATABASE "inventory-service" TO admin;
