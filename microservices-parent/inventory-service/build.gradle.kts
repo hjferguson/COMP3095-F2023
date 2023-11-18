@@ -31,6 +31,24 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.3")
+    implementation("org.springframework.boot:spring-boot-starter-webflux:3.1.5")
+    implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
+    testImplementation("org.testcontainers:junit-jupiter:1.15.3")
+    testImplementation("org.testcontainers:postgresql:1.15.3")
+
+    testImplementation ("org.wiremock:wiremock:3.3.1")
+
+
+    testImplementation ("javax.servlet:javax.servlet-api:4.0.1")
+
+
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+    }
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+
 }
 
 tasks.withType<Test> {
