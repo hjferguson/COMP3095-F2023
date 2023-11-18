@@ -7,6 +7,55 @@
 	},
 	"item": [
 		{
+			"name": "Product-Service",
+			"item": [
+				{
+					"name": "View Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Make a product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Apple ipad 2023\",\r\n    \"description\": \"New apple ipad\",\r\n    \"price\" : \"999.99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8181/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:8181/api/products/"
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8181/api/products/6558d7876ff56a28591c7972"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Place Order",
 			"request": {
 				"method": "POST",
