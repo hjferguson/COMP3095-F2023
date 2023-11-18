@@ -64,6 +64,12 @@ services:
       - inventory-service
     networks:
       - spring
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8761/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
 
   api-gateway:
     image: api-gateway
@@ -161,5 +167,3 @@ services:
 networks:
   spring:
     driver: bridge
-
-
