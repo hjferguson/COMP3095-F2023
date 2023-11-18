@@ -21,20 +21,22 @@ public class InventoryControllerTest extends AbstractContainerBase {
     @Autowired
     private MockMvc mockMvc;
 
+
     @Test
     public void testIsInStock() throws Exception {
         List<InventoryRequest> requests = List.of(
+                //makes some requests
                 new InventoryRequest("sku_12345", 1),
                 new InventoryRequest("sku_55555", 2)
         );
 
         ObjectMapper objectMapper = new ObjectMapper();
         String requestJson = objectMapper.writeValueAsString(requests);
-
+        //send those requests to api/inventory using post method
         mockMvc.perform(post("/api/inventory")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(requestJson))
                 .andExpect(status().isOk());
-        // Additional assertions can be added to validate the response body
+
     }
 }
