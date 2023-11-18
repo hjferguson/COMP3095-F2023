@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
         "eureka.client.enabled=false",
         "spring.cloud.discovery.enabled=false",
         "spring.cloud.config.discovery.enabled=false",
-        "inventory.service.url=http://localhost:8089" // WireMock server port
+        "inventory.service.url=http://localhost:8089" // WireMock server port. Added here because I was having issues with app properties for some reason...
 })
 @AutoConfigureMockMvc
 public class OrderControllerTest extends AbstractContainerBase {
@@ -44,14 +44,15 @@ public class OrderControllerTest extends AbstractContainerBase {
         wireMockServer.start();
         WireMock.configureFor("localhost", wireMockServer.port());
 
-        // Setup stub for inventory service
+        //This simulates InventoryResponse
         wireMockServer.stubFor(WireMock.post(WireMock.urlEqualTo("/"))
                 .willReturn(aResponse()
                         .withHeader("Content-Type", "application/json")
-                        .withBody("{\"skuCode\":\"SKU123\",\"sufficientStock\":true}")
+                        .withBody("[{\"skuCode\":\"sku_12345\",\"sufficientStock\":true}, {\"skuCode\":\"sku_55555\",\"sufficientStock\":true}]")
                         .withStatus(200)));
     }
 
+    //used per test. kinda redundant here but if more tests are added in future, this will be helpful?
     @AfterEach
     public void tearDown() {
         wireMockServer.stop();
