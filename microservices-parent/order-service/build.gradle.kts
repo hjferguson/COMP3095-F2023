@@ -36,6 +36,13 @@ dependencies {
     testImplementation("org.testcontainers:junit-jupiter:1.15.3")
     testImplementation("org.testcontainers:postgresql:1.15.3")
 
+    testImplementation ("org.wiremock:wiremock:3.3.1")
+
+
+    testImplementation ("javax.servlet:javax.servlet-api:4.0.1")
+
+
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
