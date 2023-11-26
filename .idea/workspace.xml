@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/inventory-service/src/test/java/ca/gbc/inventoryservice/InventoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/inventory-service/src/test/java/ca/gbc/inventoryservice/InventoryControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <recent name="C:\Users\harla\Desktop\T177\sem5\java_springboot\COMP3095-F2023" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.InventoryControllerTest">
+  <component name="RunManager" selected="Gradle.OrderControllerTest (1)">
     <configuration name="InventoryControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -127,6 +126,30 @@
             <option value=":inventory-service:test" />
             <option value="--tests" />
             <option value="&quot;ca.gbc.inventoryservice.InventoryControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InventoryControllerTest.testIsInStock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":inventory-service:test" />
+            <option value="--tests" />
+            <option value="&quot;ca.gbc.inventoryservice.InventoryControllerTest.testIsInStock&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +208,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderControllerTest.testPlaceOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ProductServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
@@ -196,33 +219,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":order-service:test" />
+            <option value=":product-service:test" />
             <option value="--tests" />
-            <option value="&quot;ca.gbc.orderservice.OrderControllerTest.testPlaceOrder&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="OrderServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices-parent" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":order-service:test" />
-            <option value="--tests" />
-            <option value="&quot;ca.gbc.orderservice.OrderServiceApplicationTests&quot;" />
+            <option value="&quot;ca.gbc.productservice.ProductServiceApplicationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -288,11 +287,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderControllerTest (1)" />
+        <item itemvalue="Gradle.InventoryControllerTest.testIsInStock" />
+        <item itemvalue="Gradle.ProductServiceApplicationTests" />
         <item itemvalue="Gradle.InventoryControllerTest" />
         <item itemvalue="Gradle.OrderControllerTest" />
-        <item itemvalue="Gradle.OrderControllerTest (1)" />
-        <item itemvalue="Gradle.OrderControllerTest.testPlaceOrder" />
-        <item itemvalue="Gradle.OrderServiceApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +333,17 @@
       <workItem from="1700241899608" duration="170000" />
       <workItem from="1700271052975" duration="13115000" />
       <workItem from="1700319858301" duration="4830000" />
-      <workItem from="1700324880673" duration="296000" />
+      <workItem from="1700324880673" duration="312000" />
+      <workItem from="1700325282318" duration="510000" />
+      <workItem from="1700329191422" duration="1739000" />
+      <workItem from="1700334544762" duration="2000" />
+      <workItem from="1700442236773" duration="278000" />
+      <workItem from="1700448432879" duration="130000" />
+      <workItem from="1700454262138" duration="392000" />
+      <workItem from="1700598389019" duration="577000" />
+      <workItem from="1700683851261" duration="594000" />
+      <workItem from="1700971753350" duration="657000" />
+      <workItem from="1701015463657" duration="592000" />
     </task>
     <servers />
   </component>
