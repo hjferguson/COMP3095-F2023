@@ -24,6 +24,7 @@ public class SecurityConfig {
 
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity serverHttpSecurity){
 
+        //need this for dev env
         serverHttpSecurity.csrf(csrf -> csrf.disable()
                 .authorizeExchange(exchange -> exchange.pathMatchers("/eureka/**")
                         .permitAll()

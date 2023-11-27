@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/java/ca/gbc/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/discovery-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/discovery-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/discovery-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/discovery-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +346,8 @@
       <workItem from="1700598389019" duration="577000" />
       <workItem from="1700683851261" duration="594000" />
       <workItem from="1700971753350" duration="657000" />
-      <workItem from="1701015463657" duration="1142000" />
+      <workItem from="1701015463657" duration="2272000" />
+      <workItem from="1701090352595" duration="2193000" />
     </task>
     <servers />
   </component>
