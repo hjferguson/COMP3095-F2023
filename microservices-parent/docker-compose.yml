@@ -2,6 +2,31 @@ version: '3.8'
 
 services:
 
+  keycloak:
+    image: jboss/keycloak
+    ports:
+      - "8080:8080"
+    environment:
+      JBOSS_LOG_MANAGER_ROOT_LOGGER: DEBUG
+      DB_VENDOR: postgres
+      DB_ADDR: postgres-keycloak
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: password
+      KEYCLOAK_IMPORT: /opt/jboss/keycloak/realms/spring-boot-microservices-realm.json
+    volumes:
+      - ./realms:/opt/jboss/keycloak/realms
+    container_name: keycloak
+    depends_on:
+      - postgres-keycloak
+    restart: unless-stopped
+    networks:
+      - spring
+
+
+
   inventory-service:
     image: inventory-service
     ports:
@@ -99,6 +124,22 @@ services:
       - ./data/postgres/inventory-service:/data/postgres
       - ./init/postgres/inventory-service/init.sql:/docker-entrypoint-initdb.d/init.sql
     container_name: postgres-inventory-gbc
+    restart: unless-stopped
+    networks:
+      - spring
+
+  postgres-keycloak:
+    image: postgres:latest
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: keycloak
+      PGDATA: /data/postgres
+    volumes:
+      - ./data/postgres/postgres-keycloak:/data/postgres
+    container_name: postgres-keycloak
     restart: unless-stopped
     networks:
       - spring
