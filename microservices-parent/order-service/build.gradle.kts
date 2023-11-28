@@ -35,7 +35,7 @@ dependencies {
     implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
     testImplementation("org.testcontainers:junit-jupiter:1.15.3")
     testImplementation("org.testcontainers:postgresql:1.15.3")
-
+    implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j:3.0.3")
     testImplementation ("org.wiremock:wiremock:3.3.1")
 
 
