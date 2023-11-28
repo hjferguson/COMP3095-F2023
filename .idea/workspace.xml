@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application-docker.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +351,7 @@
       <workItem from="1701015463657" duration="2272000" />
       <workItem from="1701090352595" duration="4518000" />
       <workItem from="1701146972899" duration="38000" />
-      <workItem from="1701177278120" duration="2265000" />
+      <workItem from="1701177278120" duration="3046000" />
     </task>
     <servers />
   </component>
