@@ -29,8 +29,9 @@ public class OrderServiceImpl implements OrderService {
     @Value("${inventory.service.url}")
     private String inventoryApiUri;
 
+    //changed from void to string, to work with timeout in controller
     @Override
-    public void placeOrder(OrderRequest orderRequest) {
+    public String placeOrder(OrderRequest orderRequest) {
 
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
@@ -67,6 +68,7 @@ public class OrderServiceImpl implements OrderService {
 
         if(Boolean.TRUE.equals(allProductsInStock)){
             orderRepository.save(order);
+            return "Order placed successfully.";
         }else{
             throw new RuntimeException("Not all products are in stock, order cannot be placed! :c");
         }
