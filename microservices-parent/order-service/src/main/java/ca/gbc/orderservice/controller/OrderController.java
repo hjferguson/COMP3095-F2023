@@ -2,6 +2,7 @@ package ca.gbc.orderservice.controller;
 
 import ca.gbc.orderservice.dto.OrderRequest;
 import ca.gbc.orderservice.service.OrderServiceImpl;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -17,9 +18,17 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @CircuitBreaker(name="inventory", fallbackMethod = "placedOrderFallback")
     public String placeOrder(@RequestBody OrderRequest request){
         log.info("Order placed successfully");
         orderService.placeOrder(request);
         return "Order placed successfully!";
     }
+
+    public String placeOrderFallback(OrderRequest request, RuntimeException e){
+        log.error("Exception is: {}", e.getMessage());
+        return "FALLBACK INVOKED: Order Placed Failed. Please try again later.";
+    }
+
+
 }
