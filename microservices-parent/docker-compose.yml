@@ -2,6 +2,18 @@ version: '3.8'
 
 services:
 
+  zipkin:
+    image: openzipkin/zipkin:latest
+    restart: unless-stopped
+    ports:
+      - "9411:9411"
+    container_name: zipkin
+    depends_on:
+      - api-gateway
+    networks:
+      - spring
+
+
   keycloak:
     image: jboss/keycloak
     ports:
