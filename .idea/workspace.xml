@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa357c0e-2c26-4e77-83b1-b30eed5bd4ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/order-service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/api-gateway/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices-parent/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +352,15 @@
       <workItem from="1701015463657" duration="2272000" />
       <workItem from="1701090352595" duration="4518000" />
       <workItem from="1701146972899" duration="38000" />
-      <workItem from="1701177278120" duration="3046000" />
+      <workItem from="1701177278120" duration="5451000" />
+      <workItem from="1701198289828" duration="3000" />
+      <workItem from="1701207357173" duration="2000" />
+      <workItem from="1701225752926" duration="1000" />
+      <workItem from="1701225971086" duration="591000" />
+      <workItem from="1701230793254" duration="2000" />
+      <workItem from="1701365277093" duration="33000" />
+      <workItem from="1701622902959" duration="4292000" />
+      <workItem from="1701656378962" duration="592000" />
     </task>
     <servers />
   </component>

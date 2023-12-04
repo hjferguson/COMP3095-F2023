@@ -15,7 +15,7 @@ services:
       DB_PASSWORD: password
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: password
-      KEYCLOAK_IMPORT: /opt/jboss/keycloak/realms/spring-boot-microservices-realm.json
+      KEYCLOAK_IMPORT: /opt/jboss/keycloak/realms/spring-boot-microservice-realm.json
     volumes:
       - ./realms:/opt/jboss/keycloak/realms
     container_name: keycloak
