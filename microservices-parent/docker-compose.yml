@@ -145,7 +145,7 @@ services:
     ports:
       - "5431:5432"
     environment:
-      POSTGRES_USER: admin
+      POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: password
       POSTGRES_DB: keycloak
       PGDATA: /data/postgres
@@ -155,6 +155,7 @@ services:
     restart: unless-stopped
     networks:
       - spring
+
 
 
   postgres-order:
@@ -177,7 +178,7 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
-    container_name: mongo
+    container_name: mongo-product
     environment:
       - MONGO_INITDB_ROOT_USERNAME=rootadmin
       - MONGO_INITDB_ROOT_PASSWORD=password
