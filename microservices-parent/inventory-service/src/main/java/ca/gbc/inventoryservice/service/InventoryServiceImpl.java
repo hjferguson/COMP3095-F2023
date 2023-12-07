@@ -7,6 +7,8 @@ import ca.gbc.inventoryservice.model.Inventory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -14,12 +16,23 @@ import java.util.List;
 @RequiredArgsConstructor
 public class InventoryServiceImpl implements InventoryService{
 
+    private static final Logger log = LoggerFactory.getLogger(InventoryServiceImpl.class);
     private final InventoryRepository inventoryRepository;
 
     @Override
     @Transactional(readOnly = true)
     public List<InventoryResponse> isInStock(List<InventoryRequest> requests) {
 
+        // Testing purposes only
+        log.info("Wait started");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+
+            Thread.currentThread().interrupt();
+            log.error("Thread was interrupted", e);
+        }
+        log.info("Wait ended");
         List<Inventory> availableInventory = inventoryRepository.findAllByInventoryRequests(requests);
 
         return requests.stream().map(request -> {

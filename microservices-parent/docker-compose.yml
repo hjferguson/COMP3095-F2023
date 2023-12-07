@@ -29,6 +29,7 @@ services:
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: password
       KEYCLOAK_IMPORT: /opt/jboss/keycloak/realms/spring-boot-microservice-realm.json
+      JWT_ISSUER_URI: http://keycloak:8080/auth/realms/spring-boot-microservices-realm
     volumes:
       - ./realms:/opt/jboss/keycloak/realms
     container_name: keycloak

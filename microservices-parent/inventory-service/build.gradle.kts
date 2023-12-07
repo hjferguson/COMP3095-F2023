@@ -40,6 +40,12 @@ dependencies {
     implementation("io.micrometer:micrometer-tracing-bridge-brave:1.1.4")
     implementation("io.zipkin.reporter2:zipkin-reporter-brave:2.16.4")
 
+    // SLF4J API
+    implementation("org.slf4j:slf4j-api:1.7.32")
+
+    // Logback Classic Implementation
+    implementation("ch.qos.logback:logback-classic:1.2.6")
+
     testImplementation ("org.wiremock:wiremock:3.3.1")
     testImplementation ("javax.servlet:javax.servlet-api:4.0.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
