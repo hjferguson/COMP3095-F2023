@@ -17,11 +17,13 @@ public class SecurityConfig {
     @Value("${spring.security.oauth2.resourceserver.jwt.issuer-uri}")
     private String issuer_uri;
 
+
     @Bean
     public ReactiveJwtDecoder jwtDecoder(){
         return ReactiveJwtDecoders.fromIssuerLocation(issuer_uri);
     }
 
+    @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity serverHttpSecurity){
 
         //need this for dev env

@@ -16,6 +16,7 @@ services:
 
   keycloak:
     image: jboss/keycloak
+    hostname: keycloak
     ports:
       - "8080:8080"
     environment:
@@ -120,6 +121,7 @@ services:
       SPRING_PROFILES_ACTIVE: docker
     depends_on:
       - discovery-service
+      - keycloak
     networks:
       - spring
 
