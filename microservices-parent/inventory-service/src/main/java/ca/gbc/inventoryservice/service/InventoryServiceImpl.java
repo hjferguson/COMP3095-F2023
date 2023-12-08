@@ -24,15 +24,15 @@ public class InventoryServiceImpl implements InventoryService{
     public List<InventoryResponse> isInStock(List<InventoryRequest> requests) {
 
         // Testing purposes only
-        log.info("Wait started");
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-
-            Thread.currentThread().interrupt();
-            log.error("Thread was interrupted", e);
-        }
-        log.info("Wait ended");
+//        log.info("Wait started");
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//
+//            Thread.currentThread().interrupt();
+//            log.error("Thread was interrupted", e);
+//        }
+//        log.info("Wait ended");
         List<Inventory> availableInventory = inventoryRepository.findAllByInventoryRequests(requests);
 
         return requests.stream().map(request -> {
